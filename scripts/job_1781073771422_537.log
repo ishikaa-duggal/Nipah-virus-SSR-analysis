@@ -1,0 +1,358 @@
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:49] - Job ID: job_1781073771422_537
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:50] - Log File: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/job_1781073771422_537.log
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:54] - --- Runtime Parameters ---
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   fasta: final.nipah.cleaned.fa
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   categories: metadata_clean_final_v2.tsv
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   gene_bed: gene.bed
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   reference_id: NC_002728.1
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   output_dir: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   flanks: False
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   mono: 10
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   di: 5
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   tri: 3
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   tetra: 3
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   penta: 3
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   hexa: 3
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   min_len: 1000
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   max_len: 10000000
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   unfair: 1000
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   threads: 8
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   min_repeat_count: 1
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   min_genome_count: 2
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:63] -   plots: True
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:64] - --------------------------
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:658] - Detected dynamic column name: 'optional_category'
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:414] - Cleaning FASTA...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:37] - Running seqtk to generate single-line FASTA...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:20] - Running: seqtk seq /home/jnlab5/ishika/crossroads_data_nipah/final.nipah.cleaned.fa
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:60] - Cleaning and formatting FASTA content...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:70] - FASTA cleaning completed
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:418] - Calculating genome stats...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:425] - Total number of genomes detected: 193
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:428] - Filtering genomes...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:435] - No of genomes removed: 14
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:438] - No of clean genomes used for comparison: 179
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:448] - Running PERF...
+2026-06-10 12:12:51 - INFO [job_1781073771422_537:20] - Running: PERF -i /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/filtered_genomes.fa -o /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/perf_out.tsv -u /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/perf_params.txt -t 8
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:473] - No of SSRs Detected in total Genomes: 1806
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:486] - Category file provided. Proceeding with merging and further analysis.
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:489] - Merged output generated at: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/mergedOut.tsv
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:226] - Generating locicons list...
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:247] - Generated locicons list at: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/locicons.txt
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:857] - Running GC2 sub-step...
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:220] - Removing header from mergedOut.tsv...
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:37] - Running bedtools intersect in: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:12] - Running command: bedtools intersect -a /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/mergedOut.bed -b /home/jnlab5/ishika/crossroads_data_nipah/gene.bed -wa -wb
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:52] - Running bedtools intersect (no overlap) in: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:12] - Running command: bedtools intersect -a /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/mergedOut.bed -b /home/jnlab5/ishika/crossroads_data_nipah/gene.bed -v
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:67] - Running bedtools intersect (no overlap genes) in: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:12] - Running command: bedtools intersect -a /home/jnlab5/ishika/crossroads_data_nipah/gene.bed -b /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/mergedOut.bed -v
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:241] - 
+Gene Statistics:
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:242] - Total genes detected with SSR: 4
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:243] - Total genes detected without SSR: 2
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:244] - Total genes: 6
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:246] - 
+Output files:
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:247] - SSR Gene Combo table generated at: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/ssr_genecombo.tsv
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:248] - SSR Non-gene table generated at: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/ssr_non_gene.tsv
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:249] - Genes Non-SSR table generated at: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/genes_non_ssr.tsv
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:876] - GC2 sub-step complete.
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:879] - Running SSR Comparison sub-step...
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:85] - Total unique genomes found: 1
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:88] - 
+Comparing against reference genome NC_002728.1
+2026-06-10 12:12:52 - INFO [job_1781073771422_537:106] - Found 8 rows from reference genome
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:107] - Found 0 rows with different repeats
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:108] - Total rows in combined file: 8
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:126] - 
+Filtering mutational hotspot records ...
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:164] - Found 0 rows in hotspot_df with concat_column matching filtered_single_df
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:169] - Saved matching rows to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/hotspot_single_matches.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:175] - Saved matching rows to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/repeatvariation.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:179] - Saved matching rows to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim/cyclical_variation.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:190] - Records after filtering: 0
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:209] - Saved mutational hotspot data (with columns removed) to: mutational_hotspot.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:50] - Found 0 HSSR records
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:237] - Dynamic column already present in HSSR data. No merge needed.
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:244] - 
+Output files:
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:245] - Main directory: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:246] - 1. HSSR Data: hssr_data.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:248] - 2. Reference SSR: ref_ssr_genecombo.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:249] - 
+Intermediate files directory: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:250] - 1. All variations: all_variations.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:251] - 2. Mutational hotspots: mutational_hotspot.csv
+2026-06-10 12:12:53 - INFO [job_1781073771422_537:911] - Starting post-processing: Generating plots...
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:110] - [bold cyan]Starting Stage 4: Multi-Modal Data Visualization[/]
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:111] - Main Data Source Dir: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:112] - Intermediate Data Source Dir: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/intrim
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:113] - Plot Output Target: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:114] - Reference ID: NC_002728.1
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:119] - Ensured base plots output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:135] - Found full data file: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/mergedOut.tsv. Proceeding with all plots.
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:146] - Loading data from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/mergedOut.tsv...
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:162] - Loading data from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/hssr_data.csv...
+2026-06-10 12:12:53 - WARNING [crossroad.core.plotting:165] - Loaded dataframe from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/hssr_data.csv is empty.
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:177] - Loading data from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/mutational_hotspot.csv...
+2026-06-10 12:12:53 - WARNING [crossroad.core.plotting:180] - Loaded dataframe from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/mutational_hotspot.csv is empty.
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:192] - Loading data from /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/main/ssr_genecombo.tsv...
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:205] - [bold yellow]Plotting started. You will have 3 seconds to press Enter to skip each plot after its prompt.[/]
+2026-06-10 12:12:53 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Category->Optional_Category Sankey[/]. Press Enter within 3s to skip...
+2026-06-10 12:12:56 - INFO [crossroad.core.plotting:284] -    Generating Category->Optional_Category Sankey plot...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:33] - Processing data for category_optional_category_sankey...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:57] - category_optional_category_sankey: Aggregating genome counts...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:66] - category_optional_category_sankey: Preparing nodes and links...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:91] - Generated 7 HSL-based colors for categories.
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:143] - category_optional_category_sankey: Summary statistics calculated.
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:146] - category_optional_category_sankey: Creating plot figure...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:227] - category_optional_category_sankey: Preparing data for CSV export...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:238] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:243] - category_optional_category_sankey: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey...
+2026-06-10 12:12:56 - INFO [crossroad.core.plots.category_country_sankey:248] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey/category_optional_category_sankey.html
+2026-06-10 12:12:57 - INFO [crossroad.core.plots.category_country_sankey:256] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey/category_optional_category_sankey.png
+2026-06-10 12:12:57 - INFO [crossroad.core.plots.category_country_sankey:267] - Link data for category_optional_category_sankey saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey/category_optional_category_sankey_links.csv
+2026-06-10 12:12:57 - INFO [crossroad.core.plots.category_country_sankey:286] - Summary statistics for category_optional_category_sankey saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/category_optional_category_sankey/category_optional_category_sankey_summary_statistics.txt
+2026-06-10 12:12:57 - INFO [crossroad.core.plots.category_country_sankey:290] - category_optional_category_sankey: Plot generation and saving complete.
+2026-06-10 12:12:57 - INFO [crossroad.core.plotting:295] -    Category->Optional_Category Sankey plot generation complete.
+2026-06-10 12:12:57 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Gene->Optional_Category Sankey[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:00 - WARNING [crossroad.core.plotting:280] -    Skipped (No Data: required dataframe) for Gene->Optional_Category Sankey plot.
+2026-06-10 12:13:00 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Motif Repeat Count (Hotspot)[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:03 - WARNING [crossroad.core.plotting:280] -    Skipped (No Data: required dataframe) for Motif Repeat Count (Hotspot) plot.
+2026-06-10 12:13:03 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]SSR Conservation[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:06 - INFO [crossroad.core.plotting:284] -    Generating SSR Conservation plot...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:30] - Processing data for ssr_conservation plot...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:54] - ssr_conservation: Total unique genomes found: 179
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:60] - ssr_conservation: Analyzing SSR conservation...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:76] - ssr_conservation: Total unique SSRs found: 49
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:90] - ssr_conservation: SSR Categories - Conserved: 1 (2.04%), Shared: 31 (63.27%), Unique: 17 (34.69%)
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:95] - ssr_conservation: Analyzing repeated motif conservation for export...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:112] - ssr_conservation: Finished analyzing repeated motif conservation for export.
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:127] - ssr_conservation: Summary statistics calculated.
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:130] - ssr_conservation: Creating pie chart figure...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:202] - ssr_conservation: Preparing data for CSV export...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:219] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:224] - ssr_conservation: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation...
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:228] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation.html
+2026-06-10 12:13:06 - INFO [crossroad.core.plots.ssr_conservation_plot:236] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation.png
+2026-06-10 12:13:07 - INFO [crossroad.core.plots.ssr_conservation_plot:236] - Saved PDF plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation.pdf
+2026-06-10 12:13:07 - INFO [crossroad.core.plots.ssr_conservation_plot:236] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation.svg
+2026-06-10 12:13:07 - INFO [crossroad.core.plots.ssr_conservation_plot:246] - Summary data for ssr_conservation saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation_summary.csv
+2026-06-10 12:13:07 - INFO [crossroad.core.plots.ssr_conservation_plot:264] - Summary statistics for ssr_conservation saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_conservation/ssr_conservation_summary_statistics.txt
+2026-06-10 12:13:07 - INFO [crossroad.core.plots.ssr_conservation_plot:268] - ssr_conservation: Plot generation and saving complete.
+2026-06-10 12:13:07 - INFO [crossroad.core.plotting:295] -    SSR Conservation plot generation complete.
+2026-06-10 12:13:07 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Motif Conservation[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:10 - INFO [crossroad.core.plotting:284] -    Generating Motif Conservation plot...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:29] - Processing data for motif_conservation plot...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:50] - motif_conservation: Total unique genomes found: 179
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:56] - motif_conservation: Analyzing motif conservation...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:76] - motif_conservation: Total unique motifs found: 35
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:90] - motif_conservation: Motif Categories - Conserved: 1 (2.86%), Shared: 25 (71.43%), Unique: 9 (25.71%)
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:105] - motif_conservation: Summary statistics calculated.
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:108] - motif_conservation: Creating pie chart figure...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:174] - motif_conservation: Preparing data for CSV export...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:191] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:196] - motif_conservation: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation...
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:200] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation/motif_conservation.html
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:208] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation/motif_conservation.png
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:208] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation/motif_conservation.svg
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:218] - Summary data for motif_conservation saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation/motif_conservation_summary.csv
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:236] - Summary statistics for motif_conservation saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_conservation/motif_conservation_summary_statistics.txt
+2026-06-10 12:13:10 - INFO [crossroad.core.plots.motif_conservation_plot:240] - motif_conservation: Plot generation and saving complete.
+2026-06-10 12:13:10 - INFO [crossroad.core.plotting:295] -    Motif Conservation plot generation complete.
+2026-06-10 12:13:10 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Relative Abundance[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:13 - INFO [crossroad.core.plotting:284] -    Generating Relative Abundance plot...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:31] - Processing data for relative_abundance plot...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:58] - relative_abundance: Overall average genome length: 0.0182 Mb
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:65] - relative_abundance: Unique genomes per category calculated.
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:68] - relative_abundance: Raw motif counts per category and length calculated.
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:95] - relative_abundance: Calculating normalized values (motifs per Mb per genome)...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:143] - relative_abundance: Summary statistics calculated.
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:146] - relative_abundance: Creating plot figure...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:150] - relative_abundance: Customizing layout...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:252] - relative_abundance: Preparing data for CSV export...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:261] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:266] - relative_abundance: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance...
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:271] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance.html
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:279] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance.png
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:279] - Saved PDF plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance.pdf
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:279] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance.svg
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:290] - Summary data for relative_abundance saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance_summary.csv
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:309] - Summary statistics for relative_abundance saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_abundance/relative_abundance_summary_statistics.txt
+2026-06-10 12:13:13 - INFO [crossroad.core.plots.relative_abundance_plot:313] - relative_abundance: Plot generation and saving complete.
+2026-06-10 12:13:13 - INFO [crossroad.core.plotting:295] -    Relative Abundance plot generation complete.
+2026-06-10 12:13:13 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Relative Density[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:17 - INFO [crossroad.core.plotting:284] -    Generating Relative Density plot...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:30] - Processing data for relative_density plot...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:58] - relative_density: Overall average genome length: 0.0182 Mb
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:65] - relative_density: Unique genomes per category calculated.
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:74] - relative_density: Sum of SSR lengths per category and motif length calculated.
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:95] - relative_density: Calculating normalized values (sum of SSR length per Mb per genome)...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:142] - relative_density: Summary statistics calculated.
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:145] - relative_density: Creating plot figure...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:149] - relative_density: Customizing layout...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:243] - relative_density: Preparing data for CSV export...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:252] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:257] - relative_density: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density...
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:262] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density.html
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:270] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density.png
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:270] - Saved PDF plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density.pdf
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:270] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density.svg
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:281] - Summary data for relative_density saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density_summary.csv
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:300] - Summary statistics for relative_density saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/relative_density/relative_density_summary_statistics.txt
+2026-06-10 12:13:17 - INFO [crossroad.core.plots.relative_density_plot:304] - relative_density: Plot generation and saving complete.
+2026-06-10 12:13:17 - INFO [crossroad.core.plotting:295] -    Relative Density plot generation complete.
+2026-06-10 12:13:17 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]SSR GC Distribution[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:20 - INFO [crossroad.core.plotting:284] -    Generating SSR GC Distribution plot...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:29] - Processing data for ssr_gc_distribution plot...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:52] - ssr_gc_distribution: Aggregating data per genome...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:65] - ssr_gc_distribution: Aggregated data for 179 genomes.
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:96] - ssr_gc_distribution: Summary statistics calculated.
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:99] - ssr_gc_distribution: Creating plot figure...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:135] - ssr_gc_distribution: Customizing layout...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:148] - Setting plot width to 1000px.
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:202] - ssr_gc_distribution: Preparing data for CSV export...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:214] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:219] - ssr_gc_distribution: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution...
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:224] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution/ssr_gc_distribution.html
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:232] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution/ssr_gc_distribution.png
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:232] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution/ssr_gc_distribution.svg
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:243] - Summary data for ssr_gc_distribution saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution/ssr_gc_distribution_summary.csv
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:262] - Summary statistics for ssr_gc_distribution saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gc_distribution/ssr_gc_distribution_summary_statistics.txt
+2026-06-10 12:13:20 - INFO [crossroad.core.plots.ssr_gc_plot:266] - ssr_gc_distribution: Plot generation and saving complete.
+2026-06-10 12:13:20 - INFO [crossroad.core.plotting:295] -    SSR GC Distribution plot generation complete.
+2026-06-10 12:13:20 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]SSR Gene Intersection[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:23 - INFO [crossroad.core.plotting:284] -    Generating SSR Gene Intersection plot...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:29] - Processing data for ssr_gene_intersection plot...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:49] - ssr_gene_intersection: Aggregating counts per gene and position...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:63] - ssr_gene_intersection: Aggregated data for 4 genes.
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:75] - ssr_gene_intersection: Summary statistics calculated.
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:82] - ssr_gene_intersection: Creating traces for stacked bar chart...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:97] - ssr_gene_intersection: Creating plot figure...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:101] - ssr_gene_intersection: Customizing layout...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:178] - ssr_gene_intersection: Preparing data for CSV export...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:188] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:193] - ssr_gene_intersection: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection...
+2026-06-10 12:13:23 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:198] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection/ssr_gene_intersection.html
+2026-06-10 12:13:24 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:206] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection/ssr_gene_intersection.png
+2026-06-10 12:13:24 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:206] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection/ssr_gene_intersection.svg
+2026-06-10 12:13:24 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:217] - Summary data for ssr_gene_intersection saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection/ssr_gene_intersection_summary.csv
+2026-06-10 12:13:24 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:232] - Summary statistics for ssr_gene_intersection saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/ssr_gene_intersection/ssr_gene_intersection_summary_statistics.txt
+2026-06-10 12:13:24 - INFO [crossroad.core.plots.ssr_gene_intersect_plot:236] - ssr_gene_intersection: Plot generation and saving complete.
+2026-06-10 12:13:24 - INFO [crossroad.core.plotting:295] -    SSR Gene Intersection plot generation complete.
+2026-06-10 12:13:24 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Temporal Faceted Scatter[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:27 - WARNING [crossroad.core.plotting:280] -    Skipped (No Data: required dataframe) for Temporal Faceted Scatter plot.
+2026-06-10 12:13:27 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]UpSet[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:30 - INFO [crossroad.core.plotting:284] -    Generating UpSet plot...
+2026-06-10 12:13:30 - INFO [crossroad.core.plots.upset_plot:59] - Attempting to generate UpSet plot...
+2026-06-10 12:13:30 - ERROR [crossroad.core.plots.upset_plot:110] - An error occurred during UpSet plot generation: Invalid RGBA argument: nan
+Traceback (most recent call last):
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/crossroad/core/plots/upset_plot.py", line 93, in create_upset_plot
+    upset.plot()
+    ~~~~~~~~~~^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/upsetplot/plotting.py", line 1098, in plot
+    self.plot_matrix(matrix_ax)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/upsetplot/plotting.py", line 810, in plot_matrix
+    ax.scatter(
+    ~~~~~~~~~~^
+        *self._swapaxes(x, y),
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **styles.rename(columns=style_columns),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/axes/_axes.py", line 5025, in scatter
+    collection = mcoll.PathCollection(
+        (path,), scales,
+    ...<5 lines>...
+        alpha=alpha,
+    )
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/collections.py", line 1030, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/collections.py", line 180, in __init__
+    self.set_edgecolor(edgecolors)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/collections.py", line 837, in set_edgecolor
+    self._set_edgecolor(c)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/collections.py", line 816, in _set_edgecolor
+    self._edgecolors = mcolors.to_rgba_array(c, self._alpha)
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/colors.py", line 515, in to_rgba_array
+    rgba = np.array([to_rgba(cc) for cc in c])
+                     ~~~~~~~^^^^
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/colors.py", line 317, in to_rgba
+    rgba = _to_rgba_no_colorcycle(c, alpha)
+  File "/home/jnlab5/miniforge3/envs/crossroad_env/lib/python3.14/site-packages/matplotlib/colors.py", line 401, in _to_rgba_no_colorcycle
+    raise ValueError(f"Invalid RGBA argument: {orig_c!r}")
+ValueError: Invalid RGBA argument: nan
+
+2026-06-10 12:13:30 - INFO [crossroad.core.plotting:295] -    UpSet plot generation complete.
+2026-06-10 12:13:30 - INFO [crossroad.core.plotting:242] - -> Preparing [bold]Motif Distribution Heatmap[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:33 - INFO [crossroad.core.plotting:284] -    Generating Motif Distribution Heatmap plot...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:25] - Processing data for motif_distribution_heatmap plot...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:53] - motif_distribution_heatmap: Found metadata columns (category, optional_category, year). Preparing annotations.
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:68] - motif_distribution_heatmap: Creating counts matrix...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:83] - motif_distribution_heatmap: Initial unique motifs in pivot table: 35
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:86] - motif_distribution_heatmap: Checking for conserved motifs to exclude...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:91] - motif_distribution_heatmap: Found and excluding 1 conserved motifs (present in all genomes).
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:101] - motif_distribution_heatmap: Motifs remaining after exclusion: 34 (Expected: 34)
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:112] - motif_distribution_heatmap: Final matrix shape (Genomes x Motifs): (179, 34)
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:116] - motif_distribution_heatmap: Attempting to sort genomes by category...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:130] - motif_distribution_heatmap: Sorting complete. First 5 index values after sort: ['EPI_ISL_20340070', 'FV537357.1', 'FV537358', 'FV537359.1', 'AY988601']
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:140] - motif_distribution_heatmap: Creating heatmap figure...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:196] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_distribution_heatmap
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:201] - motif_distribution_heatmap: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_distribution_heatmap...
+2026-06-10 12:13:33 - INFO [crossroad.core.plots.motif_distribution_heatmap:205] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_distribution_heatmap/motif_distribution_heatmap.html
+2026-06-10 12:13:34 - INFO [crossroad.core.plots.motif_distribution_heatmap:214] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_distribution_heatmap/motif_distribution_heatmap.png
+2026-06-10 12:13:34 - INFO [crossroad.core.plots.motif_distribution_heatmap:224] - Motif distribution matrix saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/motif_distribution_heatmap/motif_distribution_heatmap_matrix.csv
+2026-06-10 12:13:34 - INFO [crossroad.core.plots.motif_distribution_heatmap:228] - motif_distribution_heatmap: Plot generation and saving complete.
+2026-06-10 12:13:34 - INFO [crossroad.core.plotting:295] -    Motif Distribution Heatmap plot generation complete.
+2026-06-10 12:13:34 - INFO [crossroad.core.plotting:307] - -> Preparing [bold]Reference SSR Distribution (NC_002728.1)[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:37 - INFO [crossroad.core.plotting:329] -    Generating Reference SSR Distribution (NC_002728.1) plot...
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:32] - Processing data for reference_ssr_distribution plot (Reference: NC_002728.1)...
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:70] - reference_ssr_distribution: Summary statistics calculated.
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:73] - reference_ssr_distribution: Creating plot figure using Plotly...
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:109] - reference_ssr_distribution: Customizing layout...
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:180] - Ensured output directory exists: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:185] - reference_ssr_distribution: Saving plot outputs to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution...
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:192] - Saved HTML plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1.html
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:201] - Saved PNG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1.png
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:201] - Saved PDF plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1.pdf
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:201] - Saved SVG plot to /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1.svg
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:216] - Data for reference_ssr_distribution saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1_data.csv
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:235] - Summary statistics for reference_ssr_distribution saved to: /home/jnlab5/ishika/crossroads_data_nipah/crossroad_unfair1000/job_1781073771422_537/output/plots/reference_ssr_distribution/reference_ssr_distribution_NC_002728_1_summary_statistics.txt
+2026-06-10 12:13:37 - INFO [crossroad.core.plots.reference_ssr_distribution:239] - reference_ssr_distribution: Plot generation and saving complete for reference NC_002728.1.
+2026-06-10 12:13:37 - INFO [crossroad.core.plotting:331] -    Reference SSR Distribution (NC_002728.1) plot generation complete.
+2026-06-10 12:13:37 - INFO [crossroad.core.plotting:341] - -> Preparing [bold]SSR Gene Genome Dot Plot[/]. Press Enter within 3s to skip...
+2026-06-10 12:13:40 - WARNING [crossroad.core.plotting:347] - -> Skipping SSR Gene Genome Dot Plot plot: Data not available (hssr_data.csv).
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:376] - [bold magenta]--- Plot Summary ---[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Category->Optional_Category Sankey: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Gene->Optional_Category Sankey: [yellow]Skipped (No Data: required dataframe)[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Motif Repeat Count (Hotspot): [yellow]Skipped (No Data: required dataframe)[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - SSR Conservation: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Motif Conservation: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Relative Abundance: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Relative Density: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - SSR GC Distribution: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - SSR Gene Intersection: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Temporal Faceted Scatter: [yellow]Skipped (No Data: required dataframe)[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - UpSet: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Motif Distribution Heatmap: [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - Reference SSR Distribution (NC_002728.1): [bold green]Success[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:384] -   - SSR Gene Genome Dot Plot: [yellow]Skipped (No Data)[/]
+2026-06-10 12:13:40 - INFO [crossroad.core.plotting:385] - [bold magenta]--------------------[/]
+2026-06-10 12:13:40 - INFO [job_1781073771422_537:943] - [bold green]🟢[/] [bold green]Analysis completed successfully[/]
+2026-06-10 12:13:40 - INFO [job_1781073771422_537:944] - [bold green]🟢[/] [bold green]Stage 4: Results Aggregation & Dissemination Complete[/]
+2026-06-10 12:13:40 - INFO [job_1781073771422_537:952] - Total analysis time: 0m 49.39s
