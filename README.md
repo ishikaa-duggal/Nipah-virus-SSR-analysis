@@ -1,2 +1,2 @@
-# Nipah-virus-SSR-analysis
-Comparative genome analysis and SSR identification in Nipah virus genomes
+# Comparative-Genomics-of-Nipah-Virus
+Computational workflow for comparative genomic analysis, SSR identification, conserved marker validation, and gene mapping in Nipah virus genomes.
